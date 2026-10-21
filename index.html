@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <title>CAFE NAME | 日常に、ちょっとした贅沢なひとときを。</title>
+    <meta name="description" content="落ち着いた雰囲気の中で厳選されたコーヒーと自家製スイーツを楽しめるオープンカフェ。">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- ヘッダーナビゲーション -->
+    <header class="header" id="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="#">CAFE NAME</a></h1>
+
+            <!-- PC用ナビゲーション -->
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#concept">Concept</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#access">Access</a></li>
+                    <li><a href="#contact" class="nav-btn">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- スマホ用ハンバーガーボタン -->
+             <button class="hamburger-btn" id="hamburger-btn" aria-label="メニューを開く">
+                <span></span>
+                <span></span>
+                <span></span>
+             </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. FV -->
+        <section class="fv">
+            <div class="fv-inner">
+                <p class="fv-sub">2026.11.01 OPEN</p>
+                <h2 class="fv-title">日常に、ちょっとした<br>贅沢なひとときを。</h2>
+                <div class="fv-buttons">
+                    <a href="#menu" class="btn btn-secondary">Menuを見る</a>
+                    <a href="#contact" class="btn btn-primary">ご予約・お問い合わせ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Concept -->
+         <section class="cencept section" id="cencept">
+            <div class="container">
+                <h2 class="section-title">Concept</h2>
+                <span class="section-subtitle">お店のこだわり</span>
+                <div class="concept-content">
+                    <div class="concept-text">
+                        <h3>五感で楽しむ、特別な一杯と空間</h3>
+                        <p>
+                            世界中から厳選したスペシャルティコーヒー豆を自家焙煎。<br>
+                            木目の温もりを感じる居心地の良い空間で、焼きたての自家製スイーツとともにお待ちしております。
+                        </p>
+                        <p>
+                            お仕事帰りのひと休みに、大切な人との語らいに、思い思いの時間をお過ごしください。
+                        </p>
+                    </div>
+                    <div class="concept-img">
+                        <img src="./images/concept.jpg" alt="店内の様子">
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!-- 3. Menu -->
+          <section class="menu section" id="menu">
+            <div class="container">
+                <h2 class="section-title">Menu</h2>
+                <span class="section-subtitle">おすすめメニュー</span>
+
+                <!-- カテゴリタブ(JS制御) -->
+                 <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="all">All</button>
+                    <button class="tab-btn" data-category="drink">Drink</button>
+                    <button class="tab-btn" data-category="food">Food</button>
+                    <button class="tab-btn" data-category="sweets">Sweets</button>
+                 </div>
+
+                 <!-- メニューリスト -->
+                  <div class="menu-grid">
+                    <!-- Drink -->
+                     <article class="menu-item" data-category="drink">
+                        <img src="./images/menu-coffee.jpg" alt="ブレンドコーヒー">
+                        <div class="menu-info">
+                            <h3>自家焙煎ブレンド</h3>
+                            <p class="price">￥550</p>
+                        </div>
+                     </article>
+
+                     <!-- Food -->
+                      <article class="menu-item" data-category="food">
+                        <img src="./images/menu-sandwich.jpg" alt="アボカドトースト">
+                        <div class="menu-info">
+                            <h3>自家製パンのアボカドトースト</h3>
+                            <p class="price">￥980</p>
+                        </div>
+                      </article>
+
+                      <!-- Sweets -->
+                       <article class="menu-item" data-category="sweets">
+                         <img src="./images/menu-pancake.jpg" alt="バスクチーズケーキ">
+                         <div class="menu-info">
+                            <h3>濃厚バスクチーズケーキ</h3>
+                            <p class="price">￥680</p>
+                         </div>
+                       </article>
+                  </div>
+            </div>
+          </section>
+
+          <!-- 4. Access -->
+           <section class="access section" id="access">
+            <div class="container">
+                <h2 class="section-title">Access</h2>
+                <span class="section-subtitle">店舗情報</span>
+
+                <div class="access-content">
+                    <dl class="info-list">
+                        <dt>住所</dt>
+                        <dd>〒100-0000 東京都千代田区〇〇 1-2-3</dd>
+                        <dt>営業時間</dt>
+                        <dd>8:00 - 20:00 (L.O. 19:30)</dd>
+                        <dt>定休日</dt>
+                        <dd>水曜日</dd>
+                        <dt>最寄り駅</dt>
+                        <dd>〇〇駅 徒歩3分</dd>
+                    </dl>
+                    <div class="map-wrapper">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.8280305808206!2d139.7671248!3d35.6812362!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2zVG9reW8gU3RhdGlvbg!5e0!3m2!1sen!2sjp!4v1620000000000!5m2!1sen!2sjp" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+           </section>
+
+           <!-- 5. Contact -->
+            <section class="contact section" id="contact">
+                <div class="container">
+                    <h2 class="section-title">Contact</h2>
+                    <span class="section-subtitle">ご予約・お問い合わせ</span>
+
+                    <form class="contact-form" id="contact-form" novalidate>
+                        <div class="form-group">
+                            <label for="name">お名前<span class="required">必須</span></label>
+                            <input type="text" id="name" name="name" placeholder="山田 太郎" required>
+                            <p class="error-msg" id="error-name"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">メールアドレス<span class="required">必須</span></label>
+                            <input type="email" id="email" name="email" placeholder="example@cafe.com" required>
+                            <p class="error-msg" id="error-email"></p>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">ご用件・メッセージ<span class="required">必須</span></label>
+                            <textarea name="message" id="message" rows="5" placeholder="ご予約の日時やお問い合わせ内容をご記入ください。" required></textarea>
+                            <p class="error-msg" id="error-message"></p>
+                        </div>
+
+                        <button class="btn btn-primary submit-btn" type="submit">送信する</button>
+                    </form>
+                </div>
+            </section>
+    </main>
+
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+            <p class="copyright">&copy; 2026 CAFE NAME. All Rights Reserved.</p>
+        </div>
+     </footer>
+
+     <script src="./js/script.js"></script>
+</body>
+</html>
